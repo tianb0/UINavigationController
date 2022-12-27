@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C888FD9A29593578004EAE19 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888FD9929593578004EAE19 /* ImageStore.swift */; };
 		C8DB918A294F84900076FAC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DB9189294F84900076FAC7 /* AppDelegate.swift */; };
 		C8DB918C294F84900076FAC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DB918B294F84900076FAC7 /* SceneDelegate.swift */; };
 		C8DB9191294F84900076FAC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8DB918F294F84900076FAC7 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C888FD9929593578004EAE19 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		C8DB9186294F84900076FAC7 /* NavigationView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DB9189294F84900076FAC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8DB918B294F84900076FAC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				C8DB91BD294F89F80076FAC7 /* ItemStore.swift */,
 				C8DB918F294F84900076FAC7 /* Main.storyboard */,
 				C8DB91C1294FA53E0076FAC7 /* DetailViewController.swift */,
+				C888FD9929593578004EAE19 /* ImageStore.swift */,
 				C8DB9192294F84930076FAC7 /* Assets.xcassets */,
 				C8DB9194294F84930076FAC7 /* LaunchScreen.storyboard */,
 				C8DB9197294F84930076FAC7 /* Info.plist */,
@@ -273,6 +276,7 @@
 				C8DB91BC294F87610076FAC7 /* Item.swift in Sources */,
 				C8DB91BA294F85770076FAC7 /* ItemsViewController.swift in Sources */,
 				C8DB91C0294F9B770076FAC7 /* ItemCell.swift in Sources */,
+				C888FD9A29593578004EAE19 /* ImageStore.swift in Sources */,
 				C8DB918A294F84900076FAC7 /* AppDelegate.swift in Sources */,
 				C8DB91BE294F89F90076FAC7 /* ItemStore.swift in Sources */,
 				C8DB918C294F84900076FAC7 /* SceneDelegate.swift in Sources */,
@@ -458,6 +462,7 @@
 				DEVELOPMENT_TEAM = 8WYZ782KW5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NavigationView/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to associate photos with items.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -486,6 +491,7 @@
 				DEVELOPMENT_TEAM = 8WYZ782KW5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NavigationView/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to associate photos with items.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -19,9 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         let itemStore = ItemStore()
+        let imageStore = ImageStore()
         if let rootController = window?.rootViewController as? UINavigationController,
            let itemsViewController = rootController.topViewController as? ItemsViewController {
             itemsViewController.itemStore = itemStore
+            itemsViewController.imageStore = imageStore
         }
     }
 

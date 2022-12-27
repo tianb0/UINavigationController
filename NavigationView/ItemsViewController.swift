@@ -9,6 +9,7 @@ import UIKit
 
 class ItemsViewController: UITableViewController {
     var itemStore: ItemStore!
+    var imageStore: ImageStore!
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -45,7 +46,11 @@ class ItemsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let item = itemStore.items[indexPath.row]
+            // remove the item from the store
             itemStore.removeOne(item)
+            // remove the item's image from the image store
+            imageStore.deleteImage(forKey: item.itemKey)
+            // also remove that row from the table view with an animation
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
@@ -60,6 +65,7 @@ class ItemsViewController: UITableViewController {
                 let item = itemStore.items[row]
                 let detailViewController = segue.destination as! DetailViewController
                 detailViewController.item = item
+                detailViewController.imageStore = imageStore
             }
         }
     }
